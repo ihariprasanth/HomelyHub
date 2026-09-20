@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Single Page App: send every route to index.html so refresh does not 404
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
